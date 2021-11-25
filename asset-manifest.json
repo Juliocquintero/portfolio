@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ee4d43b9.chunk.css",
+    "main.js": "/portfolio/static/js/main.e4de14c8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e4de14c8.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0a176b36.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0a176b36.js.map",
+    "static/js/2.3273bb10.chunk.js": "/portfolio/static/js/2.3273bb10.chunk.js",
+    "static/js/2.3273bb10.chunk.js.map": "/portfolio/static/js/2.3273bb10.chunk.js.map",
+    "static/js/3.d85c809e.chunk.js": "/portfolio/static/js/3.d85c809e.chunk.js",
+    "static/js/3.d85c809e.chunk.js.map": "/portfolio/static/js/3.d85c809e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.ee4d43b9.chunk.css.map": "/portfolio/static/css/main.ee4d43b9.chunk.css.map",
+    "static/js/2.3273bb10.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3273bb10.chunk.js.LICENSE.txt",
+    "static/media/BG_Polygon_Luminary.50b2e87f.svg": "/portfolio/static/media/BG_Polygon_Luminary.50b2e87f.svg",
+    "static/media/batatabit_mobile_desktop.f5b2de1c.png": "/portfolio/static/media/batatabit_mobile_desktop.f5b2de1c.png",
+    "static/media/cv_julioq.08b02768.pdf": "/portfolio/static/media/cv_julioq.08b02768.pdf",
+    "static/media/hero_img.13c3e0a7.jpg": "/portfolio/static/media/hero_img.13c3e0a7.jpg",
+    "static/media/icon_bootstrap.88d777cb.svg": "/portfolio/static/media/icon_bootstrap.88d777cb.svg",
+    "static/media/icon_css.b3c0acbf.svg": "/portfolio/static/media/icon_css.b3c0acbf.svg",
+    "static/media/icon_git.45c85edf.svg": "/portfolio/static/media/icon_git.45c85edf.svg",
+    "static/media/icon_html.8c11e1a8.svg": "/portfolio/static/media/icon_html.8c11e1a8.svg",
+    "static/media/icon_javascript.eb9d2cb6.svg": "/portfolio/static/media/icon_javascript.eb9d2cb6.svg",
+    "static/media/icon_react.7098e271.svg": "/portfolio/static/media/icon_react.7098e271.svg",
+    "static/media/icon_redux.0093fdee.svg": "/portfolio/static/media/icon_redux.0093fdee.svg",
+    "static/media/icon_styled.9053c55f.svg": "/portfolio/static/media/icon_styled.9053c55f.svg",
+    "static/media/marvelhero_mobile_desktop.bd46fc0a.png": "/portfolio/static/media/marvelhero_mobile_desktop.bd46fc0a.png",
+    "static/media/shopingcart_mobile_desktop.5e221329.png": "/portfolio/static/media/shopingcart_mobile_desktop.5e221329.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a176b36.js",
+    "static/js/2.3273bb10.chunk.js",
+    "static/css/main.ee4d43b9.chunk.css",
+    "static/js/main.e4de14c8.chunk.js"
+  ]
+}
