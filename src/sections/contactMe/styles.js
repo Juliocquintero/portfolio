@@ -7,13 +7,14 @@ export const ContactWrapper = styled.section`
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  background-color: ${(props) => props.primary};
+  color: ${(props) => props.secondary};
   & h3 {
-    color: #fafafa;
     font-size: 2.5rem;
   }
   & p {
     font-size: 2rem;
-    color: #fafafa;
   }
 `;
 
@@ -31,12 +32,14 @@ export const Icon = styled.a`
 `;
 
 export const SendMailButton = styled.a`
-  background-color: #fafafa;
-  color: #000000;
-  text-decoration: none;
+  background-color: ${(props) => `${props.secondary}90`};
+  color: ${(props) => props.primary};
   display: inline-block;
-  padding: 0.5rem;
-  font-size: 2rem;
   border-radius: 3px;
   margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
 `;

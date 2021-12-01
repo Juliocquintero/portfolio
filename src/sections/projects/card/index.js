@@ -1,25 +1,31 @@
 import { Button, Buttons, CardWrapper, Description, Image, Title } from './styles';
 
-const Card = ({ image, name, colors, description, urls, justify }) => {
-  const { first, second, third, fourth, fifth } = colors;
+const Card = ({ image, name, colors, bgColors, description, urls, justify }) => {
+  const { primary, secondary } = colors;
   return (
-    <CardWrapper
-      colors={colors}
-      first={first}
-      second={second}
-      third={third}
-      fourth={fourth}
-      fifth={fifth}
-      justify={justify}
-    >
-      <Title>{name}</Title>
-      <Description>
+    <CardWrapper primary={bgColors.primary} secondary={primary} justify={justify}>
+      <Title primary={primary} secondary={secondary}>
+        {name}
+      </Title>
+      <Description primary={primary} secondary={secondary}>
         <p>{description}</p>
         <Buttons>
-          <Button href={urls.page} target="_blank" rel="noreferrer">
+          <Button
+            href={urls.page}
+            target="_blank"
+            rel="noreferrer"
+            primary={primary}
+            secondary={secondary}
+          >
             Ver Proyecto
           </Button>
-          <Button href={urls.code} target="_blank" rel="noreferrer">
+          <Button
+            href={urls.code}
+            target="_blank"
+            rel="noreferrer"
+            primary={primary}
+            secondary={secondary}
+          >
             Ver codigo
           </Button>
         </Buttons>

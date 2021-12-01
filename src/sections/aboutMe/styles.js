@@ -12,7 +12,8 @@ export const AbotMeWrapper = styled.section`
   align-items: center;
   padding: 2rem 1rem;
   row-gap: 2rem;
-
+  color: ${(props) => props.secondary};
+  background-color: ${(props) => props.primary};
   @media (min-width: 768px) {
     column-gap: 4rem;
     grid-template-areas:

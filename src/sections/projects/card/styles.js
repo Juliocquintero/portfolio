@@ -10,11 +10,11 @@ export const CardWrapper = styled.article`
   background-image: ${(props) =>
     `linear-gradient(
     135deg,
-    ${props.first} 0%,
-    ${props.second} 25%,
-    ${props.third} 50%,
-    ${props.fourth} 75%,
-    ${props.fifth} 100%)`};
+    ${props.primary} 0%,
+    ${props.primary}70 25%,
+    ${props.primary}50 50%,
+    ${props.primary}20 75%,
+    ${props.secondary} 100%)`};
 
   grid-template-areas:
     'title'
@@ -26,18 +26,18 @@ export const CardWrapper = styled.article`
       props.justify === 'left'
         ? `linear-gradient(
     270deg,
-    ${props.first} 0%,
-    ${props.second} 25%,
-    ${props.third} 50%,
-    ${props.fourth} 75%,
-    ${props.fifth} 100%)`
+    ${props.primary} 0%,
+    ${props.primary}70 25%,
+    ${props.primary}50 50%,
+    ${props.primary}20 75%,
+    ${props.secondary} 100%)`
         : `linear-gradient(
     90deg,
-    ${props.first} 0%,
-    ${props.second} 25%,
-    ${props.third} 50%,
-    ${props.fourth} 75%,
-    ${props.fifth} 100%)`};
+    ${props.primary} 0%,
+    ${props.primary}70 25%,
+    ${props.primary}50 50%,
+    ${props.primary}20 75%,
+    ${props.secondary} 100%)`};
     grid-template-areas: ${(props) =>
       props.justify === 'left' ? `'title .' 'description img'` : `'. title' 'img description'`};
     grid-template-columns: 1fr 1fr;
@@ -48,7 +48,7 @@ export const CardWrapper = styled.article`
 export const Title = styled.h3`
   grid-area: title;
   font-size: 2rem;
-  color: #fafafa;
+  color: ${(props) => props.secondary};
 `;
 
 export const Description = styled.div`
@@ -61,7 +61,7 @@ export const Description = styled.div`
   & p {
     font-size: 1.5rem;
     text-align: justify;
-    color: #fafafa;
+    color: ${(props) => props.secondary};
   }
   @media (min-width: 768px) {
     & p {
@@ -83,12 +83,14 @@ export const Buttons = styled.div`
 `;
 
 export const Button = styled.a`
-  font-size: 1rem;
+  background-color: ${(props) => `${props.secondary}90`};
+  color: ${(props) => props.primary};
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
   padding: 1rem;
-  background-color: #ffffff90;
-  border-radius: 0.5rem;
 `;

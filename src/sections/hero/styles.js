@@ -8,10 +8,13 @@ export const HeroWrapper = styled.section`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  transition: all 0.3s ease-in-out;
+  color: ${(props) => props.secondary};
+  background-color: ${(props) => props.primary};
   background-image: url(${bg});
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  color: #fafafa;
   & h2 {
     font-size: 3.5rem;
   }
