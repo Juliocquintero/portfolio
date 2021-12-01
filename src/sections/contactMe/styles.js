@@ -28,12 +28,18 @@ export const Icons = styled.div`
 
 export const Icon = styled.a`
   font-size: 3rem;
-  color: #fafafa;
+  transition: all 0.3s ease-in-out;
+  background-color: ${(props) => props.primary};
+  color: ${(props) => props.secondary};
+  &:hover {
+    color: ${(props) => `${props.secondary}80`};
+  }
 `;
 
 export const SendMailButton = styled.a`
   background-color: ${(props) => `${props.secondary}90`};
   color: ${(props) => props.primary};
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   border-radius: 3px;
   margin-top: 1rem;
@@ -42,4 +48,7 @@ export const SendMailButton = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
+  &:hover {
+    background-color: ${(props) => `${props.secondary}`};
+  }
 `;

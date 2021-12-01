@@ -12,7 +12,7 @@ export const ButtonWrapper = styled.div`
   background-color: ${(props) => (props.darkIsActive ? '#301935' : '#fafafa')};
   transition: all 0.3s ease-in-out;
   @media (min-width: 768px) {
-    width: 4rem;
+    width: 5rem;
     height: 2.5rem;
   }
 `;

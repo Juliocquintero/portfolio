@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const AbotMeWrapper = styled.section`
-  background-color: #ffffff;
   display: grid;
   grid-template-areas:
     'title'
@@ -14,12 +13,14 @@ export const AbotMeWrapper = styled.section`
   row-gap: 2rem;
   color: ${(props) => props.secondary};
   background-color: ${(props) => props.primary};
+  transition: all 0.3s ease-in-out;
   @media (min-width: 768px) {
     column-gap: 4rem;
     grid-template-areas:
       'title title'
       'description img'
       '. icons';
+    grid-template-columns: 1fr 0.75fr;
   }
 `;
 export const Title = styled.h3`

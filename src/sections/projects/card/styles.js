@@ -7,13 +7,14 @@ export const CardWrapper = styled.article`
   padding: 2rem;
   display: grid;
   row-gap: 2rem;
+  transition: all 0.3s ease-in-out;
   background-image: ${(props) =>
     `linear-gradient(
     135deg,
     ${props.primary} 0%,
-    ${props.primary}70 25%,
-    ${props.primary}50 50%,
-    ${props.primary}20 75%,
+    ${props.primary}90 70%,
+    ${props.primary}50 80%,
+    ${props.primary}30 90%,
     ${props.secondary} 100%)`};
 
   grid-template-areas:
@@ -27,17 +28,17 @@ export const CardWrapper = styled.article`
         ? `linear-gradient(
     270deg,
     ${props.primary} 0%,
-    ${props.primary}70 25%,
-    ${props.primary}50 50%,
-    ${props.primary}20 75%,
-    ${props.secondary} 100%)`
+    ${props.primary}90 70%,
+    ${props.primary}80 80%,
+    ${props.primary}60 90%,
+    ${props.primary}10 100%)`
         : `linear-gradient(
     90deg,
     ${props.primary} 0%,
-    ${props.primary}70 25%,
-    ${props.primary}50 50%,
-    ${props.primary}20 75%,
-    ${props.secondary} 100%)`};
+    ${props.primary}90 60%,
+    ${props.primary}60 75%,
+    ${props.primary}30 90%,
+    ${props.primary}10 100%)`};
     grid-template-areas: ${(props) =>
       props.justify === 'left' ? `'title .' 'description img'` : `'. title' 'img description'`};
     grid-template-columns: 1fr 1fr;
@@ -58,6 +59,7 @@ export const Description = styled.div`
   justify-content: center;
   gap: 2rem;
   align-items: center;
+  transition: all 0.3s ease-in-out;
   & p {
     font-size: 1.5rem;
     text-align: justify;
@@ -83,6 +85,7 @@ export const Buttons = styled.div`
 `;
 
 export const Button = styled.a`
+  transition: all 0.3s ease-in-out;
   background-color: ${(props) => `${props.secondary}90`};
   color: ${(props) => props.primary};
   display: inline-block;
@@ -93,4 +96,7 @@ export const Button = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
+  &:hover {
+    background-color: ${(props) => `${props.secondary}`};
+  }
 `;

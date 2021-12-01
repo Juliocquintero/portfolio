@@ -141,6 +141,8 @@ export const LanguageContainer = styled.li`
   & select {
     outline: none;
     border-radius: 5px;
+    border: 2px solid #000000;
+    width: 6rem;
   }
 
   @media (min-width: 768px) {
@@ -155,6 +157,10 @@ export const LanguageContainer = styled.li`
     }
     &:hover {
       background-color: transparent;
+    }
+    & select {
+      width: auto;
+      font-size: 1.5rem;
     }
   }
 `;
