@@ -123,10 +123,6 @@ export const LogoContainer = styled.a`
   }
 `;
 
-export const Logo = styled.img`
-  width: 100%;
-`;
-
 export const Buttons = styled.div`
   display: flex;
   width: 100%;

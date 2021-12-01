@@ -4,16 +4,15 @@ import {
   HeaderContainer,
   LanguageContainer,
   ListItem,
-  Logo,
   LogoContainer,
   NavBar,
   Icon,
   Buttons,
 } from './styles';
 // import logo from '../../assets/icons/jq-logo.png';
-import logoLight from '../../assets/icons/jq-logo-ligth.png';
 import DataContext from '../../context/dataProvider';
 import ThemeButton from '../ThemeButton';
+import LogoJq from './logo';
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -26,7 +25,7 @@ const Header = () => {
     <HeaderContainer>
       <nav>
         <LogoContainer href="#" onClick={() => (menuIsOpen ? handleMenu() : null)}>
-          <Logo src={logoLight} alt="Julioq logo" style={{ backgroundColor: 'withe' }} />
+          <LogoJq primary={'#fafafa'} secondary={'#000000'} size={32} />
         </LogoContainer>
         <ButtonMenu onClick={handleMenu}>
           <i className={menuIsOpen ? 'fas fa-times' : 'fas fa-bars'} />
