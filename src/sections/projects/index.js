@@ -4,24 +4,23 @@ import { useContext } from 'react';
 import DataContext from '../../context/dataProvider';
 import ThemeContext from '../../context/themeProvider';
 const Projects = () => {
-  const { info, language } = useContext(DataContext);
-  const data = info.projects;
-  const { title, list } = data;
+  const { projects, language } = useContext(DataContext);
+  const { title, list } = projects;
   const { colors } = useContext(ThemeContext);
   const { primary, secondary } = colors;
   return (
     <SectionWrapper id="projects" primary={primary} secondary={secondary}>
       <Title>{title[language]}</Title>
-      {list.map((el) => (
+      {list?.map((card) => (
         <Card
-          image={require(`../../assets/img/${el.src}`).default}
-          name={el.name}
-          urls={el.urls}
-          description={el.description[language]}
-          bgColors={el.bgColors}
+          image={require(`../../assets/img/${card.src}`).default}
+          name={card.name}
+          urls={card.urls}
+          description={card.description[language]}
+          bgColors={card.bgColors}
           colors={colors}
-          key={el.id}
-          justify={el.justify}
+          key={card.id}
+          justify={card.justify}
         />
       ))}
     </SectionWrapper>

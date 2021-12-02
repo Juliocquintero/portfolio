@@ -52,7 +52,7 @@ export const Title = styled.h3`
   color: ${(props) => props.secondary};
 `;
 
-export const Description = styled.div`
+export const DescriptionWrapper = styled.div`
   grid-area: description;
   display: flex;
   flex-direction: column;
@@ -60,15 +60,14 @@ export const Description = styled.div`
   gap: 2rem;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  & p {
-    font-size: 1.5rem;
-    text-align: justify;
-    color: ${(props) => props.secondary};
-  }
+`;
+
+export const Paragraph = styled.p`
+  font-size: 1.5rem;
+  text-align: justify;
+  color: ${(props) => props.secondary};
   @media (min-width: 768px) {
-    & p {
-      font-size: 1.8rem;
-    }
+    font-size: 1.8rem;
   }
 `;
 

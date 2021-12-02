@@ -10,15 +10,15 @@ export const ContactWrapper = styled.section`
   transition: all 0.3s ease-in-out;
   background-color: ${(props) => props.primary};
   color: ${(props) => props.secondary};
-  & h3 {
-    font-size: 2.5rem;
-  }
-  & p {
-    font-size: 2rem;
-  }
 `;
 
-export const ContactEmail = styled.div``;
+export const Title = styled.h3`
+  font-size: 2.5rem;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 2rem;
+`;
 export const Icons = styled.div`
   display: flex;
   justify-content: center;

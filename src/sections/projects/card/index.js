@@ -1,4 +1,12 @@
-import { Button, Buttons, CardWrapper, Description, Image, Title } from './styles';
+import {
+  Button,
+  Buttons,
+  CardWrapper,
+  DescriptionWrapper,
+  Image,
+  Paragraph,
+  Title,
+} from './styles';
 
 const Card = ({ image, name, colors, bgColors, description, urls, justify }) => {
   const { primary, secondary } = colors;
@@ -7,8 +15,10 @@ const Card = ({ image, name, colors, bgColors, description, urls, justify }) => 
       <Title primary={primary} secondary={secondary}>
         {name}
       </Title>
-      <Description primary={primary} secondary={secondary}>
-        <p>{description}</p>
+
+      <DescriptionWrapper primary={primary} secondary={secondary}>
+        <Paragraph secondary={secondary}>{description}</Paragraph>
+
         <Buttons>
           <Button
             href={urls.page}
@@ -29,7 +39,7 @@ const Card = ({ image, name, colors, bgColors, description, urls, justify }) => 
             Ver codigo
           </Button>
         </Buttons>
-      </Description>
+      </DescriptionWrapper>
 
       <Image src={image} alt={name} />
     </CardWrapper>

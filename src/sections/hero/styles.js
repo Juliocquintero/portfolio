@@ -15,27 +15,26 @@ export const HeroWrapper = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  & h2 {
-    font-size: 3.5rem;
-  }
-  & h2::before {
+`;
+
+export const Title = styled.h2`
+  font-size: 3.5rem;
+  &::before {
     content: '<>';
   }
-  & h2::after {
+  &::after {
     content: '</>';
   }
-  & h3 {
-    font-size: 2.8rem;
-    font-weight: 400;
-  }
   @media (min-width: 768px) {
-    & h2 {
-      font-size: 5.5rem;
-    }
-    & h3 {
-      font-size: 4.8rem;
-      font-weight: 400;
-    }
+    font-size: 5.5rem;
+  }
+`;
+
+export const SubTitle = styled.h3`
+  font-size: 2.8rem;
+  font-weight: 400;
+  @media (min-width: 768px) {
+    font-size: 4.8rem;
   }
 `;
 

@@ -16,8 +16,8 @@ import LogoJq from '../Logo';
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const { info, language, handleLanguage } = useContext(DataContext);
-  const options = info.menuOpts[language];
+  const { menuOpts, language, handleLanguage } = useContext(DataContext);
+  const options = menuOpts[language];
   const handleMenu = () => {
     setMenuIsOpen(!menuIsOpen);
   };

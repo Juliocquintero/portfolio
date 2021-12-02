@@ -4,13 +4,6 @@ const ThemeContext = createContext();
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
   const handleTheme = () => {
-    // if (e.target.checked === false) {
-    //   setTheme('light');
-    //   localStorage.setItem('theme', 'light');
-    // } else {
-    //   setTheme('dark');
-    //   localStorage.setItem('theme', 'dark');
-    // }
     if (theme === 'light') {
       setTheme('dark');
     } else {

@@ -1,4 +1,4 @@
-import { ContactEmail, ContactWrapper, Icon, Icons, SendMailButton } from './styles';
+import { ContactWrapper, Icon, Icons, Paragraph, SendMailButton, Title } from './styles';
 import pdf from '../../assets/docs/cv_julioq.pdf';
 import { useContext } from 'react';
 import ThemeContext from '../../context/themeProvider';
@@ -6,24 +6,24 @@ import DataContext from '../../context/dataProvider';
 const Contact = () => {
   const { colors } = useContext(ThemeContext);
   const { primary, secondary } = colors;
-  const { info, language } = useContext(DataContext);
-  const { contact } = info;
+  const { contactMe, language } = useContext(DataContext);
   return (
     <ContactWrapper id="contact-me" primary={primary} secondary={secondary}>
-      <h3>{contact[language]?.title}</h3>
-      <ContactEmail primary={primary} secondary={secondary}>
-        <p>
-          {contact[language]?.text}
-          <strong>{contact[language]?.strong} </strong>
-        </p>
+      <Title>{contactMe[language]?.title}</Title>
+
+      <div>
+        <Paragraph>
+          {contactMe[language]?.text}
+          <strong>{contactMe[language]?.strong} </strong>
+        </Paragraph>
         <SendMailButton
           href="mailto:juliocquinterog17@gmail.com"
           primary={primary}
           secondary={secondary}
         >
-          <i className="far fa-envelope" aria-hidden="true"></i> {contact[language]?.button}
+          <i className="far fa-envelope" aria-hidden="true" /> {contactMe[language]?.button}
         </SendMailButton>
-      </ContactEmail>
+      </div>
 
       <Icons>
         <Icon
