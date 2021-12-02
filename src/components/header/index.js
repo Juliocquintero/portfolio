@@ -12,7 +12,7 @@ import {
 // import logo from '../../assets/icons/jq-logo.png';
 import DataContext from '../../context/dataProvider';
 import ThemeButton from '../ThemeButton';
-import LogoJq from './logo';
+import LogoJq from '../Logo';
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);

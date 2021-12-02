@@ -1,4 +1,5 @@
 import './assets/styles/App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import { DataProvider } from './context/dataProvider';
 import { ThemeProvider } from './context/themeProvider';
@@ -12,14 +13,15 @@ function App() {
     <>
       <DataProvider>
         <ThemeProvider>
-          <div className="App">
-            {/* <header className="App-header"></header> */}
-            <Header />
-            <Hero />
-            <AboutMe />
-            <Projects />
-            <Contact />
-          </div>
+          <Header />
+          <Hero />
+          <hr />
+          <AboutMe />
+          <hr />
+          <Projects />
+          <hr />
+          <Contact />
+          <Footer />
         </ThemeProvider>
       </DataProvider>
     </>

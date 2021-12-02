@@ -9,7 +9,7 @@ export const AbotMeWrapper = styled.section`
     'icons';
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   row-gap: 2rem;
   color: ${(props) => props.secondary};
   background-color: ${(props) => props.primary};
