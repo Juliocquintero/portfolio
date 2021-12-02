@@ -15,7 +15,7 @@ const DataProvider = ({ children }) => {
   const info = {
     homeTitle: {
       eng: {
-        title: `Hi, I'm soy Julio Quintero`,
+        title: `Hi, I'm Julio Quintero`,
         subTitle: 'React Frontend Developer',
       },
       esp: {
@@ -49,7 +49,7 @@ const DataProvider = ({ children }) => {
         esp: 'Sobre mi',
       },
       info: {
-        eng: '',
+        eng: `I am a software developer,  i love to work proactively and i like to challenge me and do my best to improve myself. At the same time, I try to keep up with the technologies; in addition to this i write a clean code with good practices. If I don't know any technology, I like to know it.`,
         esp: `Soy un desarrollador de software, me encanta trabajar de forma proactiva y me gusta
         desafiarme y hacer todo lo posible para mejorarme. Al mismo tiempo, trato de mantenerme al
         día con las tecnologías; Además de esto escribo un código limpio con buenas prácticas. Si
@@ -81,7 +81,7 @@ const DataProvider = ({ children }) => {
             page: 'https://juliocquintero.github.io/shopingcart/',
           },
           description: {
-            eng: '',
+            eng: 'Practice page of a shopping cart. Used Technologies: HTML, CSS, Javascript, React (Redux) & Bootstrap ',
             esp: 'Pagina de Practica de un Carrito de compras, donde se utilizaron tecnologias tales como: HTML, CSS, Javascript, React (Redux), Bootstrap.',
           },
           bgColors: {
@@ -98,8 +98,8 @@ const DataProvider = ({ children }) => {
             page: 'https://juliocquintero.github.io/marvelHero',
           },
           description: {
-            eng: '',
-            esp: 'Es el sitio oficial de Marvel Entertainment. Explore personajes, cómics, programas de televisión y más oficiales de Marvel. En la misma, se utilizaron tecnologias tales como: HTML, CSS, Javascript, React (Routes, useContext), consumo de API, Styled Components.',
+            eng: 'It is the (un) official site of Marvel Entertainment. Explore official Marvel characters, comics, TV shows and more. Used Technologies: HTML, CSS, Javascript, React (Routes, useContext), API REST & Styled Components',
+            esp: 'Es el sitio (no )oficial de Marvel Entertainment. Explore personajes, cómics, programas de televisión y más oficiales de Marvel. En la misma, se utilizaron tecnologias tales como: HTML, CSS, Javascript, React (Routes, useContext), consumo de API, Styled Components.',
           },
           bgColors: {
             primary: '#E62429',
@@ -116,7 +116,7 @@ const DataProvider = ({ children }) => {
             page: 'https://juliocquintero.github.io/batatabit_HTML-CSS/',
           },
           description: {
-            eng: '',
+            eng: 'Batatabit is a platform that provides in real time the different prices and trends of cryptocurrencies. Designed with: HTML, CSS (Flexbox)',
             esp: 'Batatabit es una plataforma que brinda en tiempo real los diferentes precios y tendencias de las criptomonedas. En la misma, se utilizaron tecnologias tales como: HTML, CSS (Flexbox)',
           },
           bgColors: {
@@ -126,6 +126,20 @@ const DataProvider = ({ children }) => {
           justify: 'right',
         },
       ],
+    },
+    contact: {
+      esp: {
+        title: 'Contactame',
+        text: 'Si crees que puedo aportar valor a tu empresa....',
+        strong: '¡hablemos!',
+        button: 'Escribeme',
+      },
+      eng: {
+        title: 'Contact me',
+        text: 'If you believe that I can contribute to your company, ',
+        strong: 'talk to me!',
+        button: 'Write me',
+      },
     },
   };
   const data = { info, language, handleLanguage };
