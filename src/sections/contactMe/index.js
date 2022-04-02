@@ -17,7 +17,7 @@ const Contact = () => {
           <strong>{contactMe[language]?.strong} </strong>
         </Paragraph>
         <SendMailButton
-          href="mailto:juliocquinterog17@gmail.com"
+          href="mailto:julioqdev@gmail.com"
           primary={primary}
           secondary={secondary}
         >
