@@ -20,6 +20,7 @@ const Header = () => {
   const options = menuOpts[language];
   const handleMenu = () => {
     setMenuIsOpen(!menuIsOpen);
+    
   };
   return (
     <HeaderContainer>

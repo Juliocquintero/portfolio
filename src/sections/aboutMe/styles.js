@@ -11,9 +11,8 @@ export const AbotMeWrapper = styled.section`
   align-items: center;
   padding: 3rem 1rem;
   row-gap: 2rem;
-  color: ${(props) => props.secondary};
-  background-color: ${(props) => props.primary};
-  transition: all 0.3s ease-in-out;
+  max-width: 1024px;
+  margin: 0 auto;
   @media (min-width: 768px) {
     column-gap: 4rem;
     grid-template-areas:
@@ -35,17 +34,21 @@ export const Img = styled.img`
   object-fit: cover;
   grid-area: img;
   margin: auto;
+  box-shadow: 0px 0px 1.5rem #111827;
 `;
 
 export const Description = styled.p`
   grid-area: description;
-  text-align: justify;
+  text-align: start;
   font-size: 2rem;
   padding: 2rem;
 `;
 
-export const Icons = styled.div`
+export const IconsContainer = styled.div`
   grid-area: icons;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 `;
 
 export const Icon = styled.img`

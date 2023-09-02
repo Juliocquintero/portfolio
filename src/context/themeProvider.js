@@ -13,10 +13,10 @@ const ThemeProvider = ({ children }) => {
   const themeColors = {
     light: {
       primary: '#fafafa',
-      secondary: '#020202',
+      secondary: '#111827',
     },
     dark: {
-      primary: '#020202',
+      primary: '#111827',
       secondary: '#fcfcfc',
     },
   };

@@ -8,7 +8,7 @@ const Contact = () => {
   const { primary, secondary } = colors;
   const { contactMe, language } = useContext(DataContext);
   return (
-    <ContactWrapper id="contact-me" primary={primary} secondary={secondary}>
+    <ContactWrapper id="contact-me">
       <Title>{contactMe[language]?.title}</Title>
 
       <div>
