@@ -1,23 +1,34 @@
-import { createContext, useState } from 'react';
+import { createContext, useState } from "react";
+import {
+  handleLocalStorage,
+  getLocalStorageValue,
+} from "../utilities/handleLocalStorage";
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    const themeInLocalStorage = getLocalStorageValue("theme");
+    return themeInLocalStorage || "light";
+  });
+
   const handleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
+    if (theme === "light") {
+      setTheme("dark");
+      handleLocalStorage("theme", "dark");
     } else {
-      setTheme('light');
+      setTheme("light");
+      handleLocalStorage("theme", "light");
     }
   };
+
   const themeColors = {
     light: {
-      primary: '#fafafa',
-      secondary: '#020202',
+      primary: "#fafafa",
+      secondary: "#111827",
     },
     dark: {
-      primary: '#020202',
-      secondary: '#fcfcfc',
+      primary: "#111827",
+      secondary: "#fcfcfc",
     },
   };
 

@@ -8,14 +8,14 @@ export const CardWrapper = styled.article`
   display: grid;
   row-gap: 2rem;
   transition: all 0.3s ease-in-out;
-  background-image: ${(props) =>
+  ${'' /* background-image: ${(props) =>
     `linear-gradient(
     135deg,
     ${props.primary} 0%,
     ${props.primary}90 70%,
     ${props.primary}50 80%,
     ${props.primary}30 90%,
-    ${props.secondary} 100%)`};
+    ${props.secondary} 100%)`}; */}
 
   grid-template-areas:
     'title'
@@ -23,7 +23,7 @@ export const CardWrapper = styled.article`
     'description';
   @media (min-width: 768px) {
     row-gap: 0;
-    background-image: ${(props) =>
+    ${'' /* background-image: ${(props) =>
       props.justify === 'left'
         ? `linear-gradient(
     270deg,
@@ -38,7 +38,7 @@ export const CardWrapper = styled.article`
     ${props.primary}90 60%,
     ${props.primary}60 75%,
     ${props.primary}30 90%,
-    ${props.primary}10 100%)`};
+    ${props.primary}10 100%)`}; */}
     grid-template-areas: ${(props) =>
       props.justify === 'left' ? `'title .' 'description img'` : `'. title' 'img description'`};
     grid-template-columns: 1fr 1fr;

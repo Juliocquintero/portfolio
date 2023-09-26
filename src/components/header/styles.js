@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   padding: 1rem 2rem;
@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   position: sticky;
   top: 0;
-  background-color: #000000;
+  background-color: #111827;
   & nav {
     width: 100%;
     max-width: 1024px;
@@ -21,7 +21,9 @@ export const HeaderContainer = styled.header`
   }
 
   @media (min-width: 768px) {
-    backdrop-filter: blur(3px);
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
     & nav {
       justify-content: space-between;
     }
@@ -43,15 +45,15 @@ export const ButtonMenu = styled.menu`
 `;
 
 export const NavBar = styled.ul`
-  left: ${(props) => (props.active ? '0%' : '-100%')};
+  left: ${(props) => (props.active ? "0%" : "-100%")};
   top: 5rem;
-  opacity: ${(props) => (props.active ? '100' : '0')};
+  opacity: ${(props) => (props.active ? "100" : "0")};
   padding: 2rem;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: rgba(55, 55, 55, 0.95);
+  background-color: #11182795;
   list-style: none;
   overflow-x: hidden;
   transition: 0.2s;
@@ -66,7 +68,7 @@ export const NavBar = styled.ul`
     height: 100%;
     opacity: 100;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -81,7 +83,7 @@ export const ListItem = styled.li`
   font-size: 2rem;
   & a {
     display: flex;
-    color: #fafafa;
+    color: inherit;
     text-decoration: none;
     align-items: center;
     gap: 1rem;
@@ -91,7 +93,7 @@ export const ListItem = styled.li`
     color: #fafafa;
   }
   &:hover {
-    background-color: #99999970;
+    ${"" /* background-color: #99999970; */}
   }
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -108,9 +110,10 @@ export const ListItem = styled.li`
     & a {
       display: block;
       text-align: center;
+      transition: font 250ms linear;
     }
     & a:hover {
-      background-color: #99999920;
+      font-weight: bold;
     }
   }
 `;

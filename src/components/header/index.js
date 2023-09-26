@@ -20,6 +20,7 @@ const Header = () => {
   const options = menuOpts[language];
   const handleMenu = () => {
     setMenuIsOpen(!menuIsOpen);
+    
   };
   return (
     <HeaderContainer>
@@ -45,6 +46,7 @@ const Header = () => {
                 onChange={(e) => {
                   handleLanguage(e.target.value);
                 }}
+                value={language}
               >
                 <option value="esp">ESP</option>
                 <option value="eng">ENG</option>

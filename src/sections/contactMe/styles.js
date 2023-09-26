@@ -7,9 +7,6 @@ export const ContactWrapper = styled.section`
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  transition: all 0.3s ease-in-out;
-  background-color: ${(props) => props.primary};
-  color: ${(props) => props.secondary};
 `;
 
 export const Title = styled.h3`
