@@ -1,8 +1,16 @@
-import { ContactWrapper, Icon, Icons, Paragraph, SendMailButton, Title } from './styles';
-import pdf from '../../assets/docs/cv_julioq.pdf';
-import { useContext } from 'react';
-import ThemeContext from '../../context/themeProvider';
-import DataContext from '../../context/dataProvider';
+import {
+  ContactWrapper,
+  Icon,
+  Icons,
+  Paragraph,
+  SendMailButton,
+  Title,
+} from "./styles";
+
+import { useContext } from "react";
+import ThemeContext from "../../context/themeProvider";
+import DataContext from "../../context/dataProvider";
+
 const Contact = () => {
   const { colors } = useContext(ThemeContext);
   const { primary, secondary } = colors;
@@ -21,7 +29,8 @@ const Contact = () => {
           primary={primary}
           secondary={secondary}
         >
-          <i className="far fa-envelope" aria-hidden="true" /> {contactMe[language]?.button}
+          <i className="far fa-envelope" aria-hidden="true" />{" "}
+          {contactMe[language]?.button}
         </SendMailButton>
       </div>
 
@@ -44,7 +53,12 @@ const Contact = () => {
           <i className="fab fa-linkedin" />
         </Icon>
 
-        <Icon href={pdf} target="_blank" primary={primary} secondary={secondary}>
+        <Icon
+          href="https://drive.google.com/file/d/1I5w3ZJyet-oqSwtiZCkZDNQD00CJ6QYw/view?usp=sharing"
+          target="_blank"
+          primary={primary}
+          secondary={secondary}
+        >
           <i className="fas fa-file-pdf" />
         </Icon>
       </Icons>

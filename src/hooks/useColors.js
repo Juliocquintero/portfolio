@@ -5,7 +5,6 @@ const useColors = () => {
   const { colors } = useContext(ThemeContext);
   const { primary, secondary } = colors;
 
-  console.log(primary, secondary)
   return {
     primary,
     secondary,

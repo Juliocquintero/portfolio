@@ -1,17 +1,20 @@
 import { createContext, useState } from "react";
 import { icons } from "../constans/icons";
+import {
+  getLocalStorageValue,
+  handleLocalStorage,
+} from "../utilities/handleLocalStorage";
 
 const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-  const [language, setLanguage] = useState("esp");
-  const handleLanguage = (language) => {
-    // if (language === 'esp') {
-    //   setLanguage('eng');
-    // } else {
-    //   setLanguage('esp');
-    // }
-    setLanguage(language);
+  const [language, setLanguage] = useState(() => {
+    const languageInLocalStorage = getLocalStorageValue("language");
+    return languageInLocalStorage || "esp";
+  });
+  const handleLanguage = (newLanguage) => {
+    setLanguage(newLanguage);
+    handleLocalStorage("language", newLanguage);
   };
 
   const hero = {
